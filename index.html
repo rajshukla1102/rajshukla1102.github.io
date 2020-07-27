@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+
+    <title>Portfolio</title>
+</head>
+<body>
+    <section>
+        <div class="content">
+            <div>
+                <h2>Rishabh Raj Shukla</h2>
+                <p>Web Developer</p><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. exercitationem repellat odit, ipsa, quis corporis!Lorem
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat culpa sint sunt voluptatum maiolaoris magnam unde quod, quidem nisi veritatis eius reiciendis beatae tenetur! Veniam!</p>
+                <a href="#">Download CV</a>
+            </div>
+        </div>
+        <div class="imgBox">
+            <img src="/img/man2.png" alt="logo">
+        </div>
+        <ul class="nav" id="nav">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">MyProject</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <ul class="social">
+           <li><a href="#" class="link"><i class="fa fa-linkedin"></i></a></li>
+           <li><a href="#"><i class="fa fa-github"></i></a></li>
+        </ul>
+    </section>
+    <span class="menuicon" id="toggle" onclick="menu()"></span>
+</body>
+<script>
+    function menu(){
+        let nav=document.getElementById('nav')
+        nav.classList.toggle('active')
+        let toggle=document.getElementById('toggle')
+        toggle.classList.toggle('active')
+    }
+</script>
+</html>
